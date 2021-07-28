@@ -1,2 +1,2 @@
 # web-design-1
-This is a repository of web design challenges.
+This is a repository containing web design challenges.
