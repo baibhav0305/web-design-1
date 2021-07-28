@@ -1,0 +1,215 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    height: 100vh;
+    background: url(https://raw.githubusercontent.com/Ahmad-Kanj/Frontend-Mentor-Huddle-landing-page/7f4cbe00504f731af80008cb75002741cf843001/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: 91% 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    min-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10fr 80fr 10fr;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-right: 100px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+
+.content {
+    line-height: 25px;
+    margin-right: 100px;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.submitBtn {
+    margin-top: 30px;
+    align-self: flex-start;
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .submitBtn:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .links a:hover {
+        color: hsl(300, 69%, 71%);
+        border: hsl(300, 69%, 71%) 2px solid;
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.footer-cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: hsl(0, 0%, 82%) 2px solid;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.img-illu {
+    width: 700px;
+    height: 500px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+
+.logo {
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 60px;
+    width: 220px;
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .container {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    body {
+        background: url(https://raw.githubusercontent.com/Ahmad-Kanj/Frontend-Mentor-Huddle-landing-page/7f4cbe00504f731af80008cb75002741cf843001/images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .logo {
+        margin: 0;
+        width: 125px;
+        height: 30px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .img-illu {
+        margin: 0;
+        width: 300px;
+        height: 225px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
+    .text {
+        max-width: 400px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 38px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        line-height: 35px;
+    }
+
+    .content {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 25px;
+    }
+
+    .submitBtn {
+        align-self: center;
+        width: 200px;
+        height: 40px;
+        font-size: 0.75rem;
+        margin-bottom: 30px;
+    }
+
+    .footer-cont {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        margin: 0;
+    }
+
+    .links a {
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(0, 96%, 67%); 
+}
